@@ -2,4 +2,6 @@
 
 Material for AHDA 2019
 
-*I'll add to this README soon, to demonstrate versions*
+## Files
+
+Frankenstein - downloaded from Google Books with header material removed with no copyright or reuse issues affecting us, in plain text format, Windows CRLF and encoded in UTF-BOM.
