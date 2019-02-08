@@ -13,7 +13,7 @@ Monday 11 February 2019.
 
 
 **Frankenstein.txt** is downloaded from Google Books with header material removed.
-Two smaller **Frankenstein.docx** is derived from it.
+Two smaller **Frankenstein_25.docx** and **Frankenstein_25.txt** are derived from it.
 
 **Moore.txt** is downloaded from the
 [Thomas Moore Archive](http://www.thomasmoore.ie/TMHA_1.0_Home.html).
