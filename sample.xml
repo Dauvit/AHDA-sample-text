@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/rioxx2.xsl"?>
+<rioxx xmlns="http://www.rioxx.net/schema/v2.0/rioxx/" xmlns:ali="http://ali.niso.org/2014/ali/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rioxxterms="http://docs.rioxx.net/schema/v2.0/rioxxterms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.rioxx.net/schema/v2.0/rioxx/ http://www.rioxx.net/schema/v2.0/rioxx/rioxx.xsd">
+  <ali:free_to_read></ali:free_to_read>
+  <dc:description>The breadth of biodiversity literature available through the Biodiversity Heritage Library (BHL) is potentially of great use to agricultural research. It provides access to literature drawn from across the world, and its archives document the Earth as it was one hundred years ago and more. However, this strength of BHL is also its weakness: the breadth of coverage of BHL can complicate finding relevant literature. In this short paper, we will explore the practical issues arising from attempting to filter out relevant legacy literature to support agricultural research.</dc:description>
+  <dc:format>application/pdf</dc:format>
+  <dc:identifier>http://oro.open.ac.uk/41117/1/Finding-agriculture-among-biodiversity-BromleyKingMorse-30-MTSR2014.pdf</dc:identifier>
+  <dc:language>en</dc:language>
+  <dc:publisher>Springer International Publishing</dc:publisher>
+  <dc:relation>http://www.mtsr-conf.org/images/karlsruhe/8thMTSR_programme_v3.pdf</dc:relation>
+  <dc:source>1865-0929</dc:source>
+  <dc:title>Finding agriculture among biodiversity: metadata in practice</dc:title>
+  <rioxxterms:author>Bromley, Jane M.</rioxxterms:author>
+  <rioxxterms:author id="http://orcid.org/0000-0001-7299-9392">King, David</rioxxterms:author>
+  <rioxxterms:author>Morse, David R.</rioxxterms:author>
+  <rioxxterms:publication_date>2014-11</rioxxterms:publication_date>
+  <rioxxterms:type>Conference Paper/Proceeding/Abstract</rioxxterms:type>
+  <rioxxterms:version>P</rioxxterms:version>
+  <rioxxterms:version_of_record>http://dx.doi.org/10.1007/978-3-319-13674-5_18</rioxxterms:version_of_record>
+</rioxx>
