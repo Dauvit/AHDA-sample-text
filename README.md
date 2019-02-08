@@ -22,14 +22,14 @@ Other data has been downloaded from the OU's open repository
 as described in `workshop.md`.
 
 
-## Licnenses ##
+## Licenses ##
 
 Scripts are released under the MIT license. See License.txt.
 
 The Frankenstein text is available under
-[Google Book's terma](https://books.google.co.uk/intl/en/googlebooks/tos.html).
+[Google Books terms](https://books.google.co.uk/intl/en/googlebooks/tos.html).
 
-The data frmo the Thomas Moore Hypermedia Archive is licensed under a
+The data from the Thomas Moore Hypermedia Archive is licensed under a
 Creative Commons Attribution-Non-Commercial-No Derivative Works 3.0 Unported License. 
 
 The OU sample data is freely available for reuse.
