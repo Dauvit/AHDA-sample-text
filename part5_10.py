@@ -8,6 +8,10 @@ Part 5, Example 10.
 # Named Entity Recognition
 
 import nltk
+nltk.download('max_ent_chunker')
+nltk.download('words')
+
+print()
 
 sentence = "Francesca is working at The Open University in Britain."
 tokens = nltk.word_tokenize(sentence)

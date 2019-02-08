@@ -10,6 +10,9 @@ Part 5, Example 9.
 import pprint
 
 import nltk
+nltk.download('averaged_perceptron_tagger')
+
+print()
 
 sentence = "He spoke of the spoke on his bicycle."
 tokens = nltk.word_tokenize(sentence)
