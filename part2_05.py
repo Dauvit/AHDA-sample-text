@@ -5,7 +5,7 @@
 Part 2, Example 5.
 """
 
-# Read a json file and dsiplay it in a human friendly fashion
+# Read a json file and display it in a human friendly fashion
 
 import json
 import pprint
