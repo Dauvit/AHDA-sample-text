@@ -19,7 +19,7 @@ Two smaller **Frankenstein_25.docx** and **Frankenstein_25.txt** are derived fro
 [Thomas Moore Archive](http://www.thomasmoore.ie/TMHA_1.0_Home.html).
 
 Other data has been downloaded from the OU's open repository
-as described in `workshop.md`.
+as described in `workbook.md`.
 
 
 ## Licenses ##

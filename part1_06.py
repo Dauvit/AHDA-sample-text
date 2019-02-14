@@ -13,3 +13,10 @@ if 'Mary' in words:
     print('Found Mary')
 else:
     print('Where has Mary gone?')
+
+target_animal = 'lamb'
+
+if target_animal in words:
+    print('Found animal')
+else:
+    print('Where has the animal gone?')

@@ -3,6 +3,15 @@
 """Python for AHDA.
 
 Part 4, Example 1.
+
+Please rename:
+
+'sample_thomas_moore_download.txt'
+
+to:
+
+'Moore.txt'
+
 """
 
 # Cut a subset of a file

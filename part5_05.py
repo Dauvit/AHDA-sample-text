@@ -8,6 +8,8 @@ Part 5, Example 5.
 # collocations
 
 import nltk
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 
 F_IN = 'Frankenstein.txt'

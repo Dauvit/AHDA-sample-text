@@ -16,3 +16,5 @@ with open(F_IN, 'r', encoding='utf-8', newline='\n') as f_in:
     tokens = nltk.word_tokenize(raw_text)
     nltk_text = nltk.Text(tokens)
     print(nltk_text.concordance('monster', lines=5))
+    print()
+    print(nltk_text.concordance('creature', lines=5))

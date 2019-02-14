@@ -13,3 +13,10 @@ import pprint
 with open('sample.js', 'r', encoding='utf-8', newline='\n') as f_in:
     json_content = json.load(f_in)
     pprint.pprint(json_content)
+    print()
+    print(json_content['title'])
+    print()
+    print(json_content['rioxx2_author'])
+    print()
+    for entry in json_content['rioxx2_author']:
+        print(entry['author'])

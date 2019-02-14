@@ -33,6 +33,8 @@ with open(SAVE_FILE, 'r', encoding='utf-8', newline='\n') as f_in:
     # print()
     # tag_a_all = soup.find_all('a')
     # print(tag_a_all)
+    # print(len(tag_a_all))
     # print()
-    # for tag_a in tag_a_all:
-        # print(tag_a)
+    # tag_a_all = soup.find_all('a', attrs={'class':'title-link'})
+    # print(tag_a_all)
+    # print(len(tag_a_all))

@@ -13,11 +13,11 @@ EXTRACT_WORDS = re.compile(r'\w+').findall
 
 F_IN = 'Moore_106_trimmed.txt'
 
-PRONOUNS = ('her', 'hers', 'herself', 'him', 'himself', 'his',
+PRONOUNS = ['her', 'hers', 'herself', 'him', 'himself', 'his',
             'hisself', 'it', 'itself', 'me', 'mine', 'my', 'myself',
             'one', 'oneself', 'our', 'ours', 'ourselves', 'ownself',
             'self', 'she', 'thee', 'their', 'theirs', 'them',
-            'themselves', 'they', 'thou', 'thy', 'us', 'your')
+            'themselves', 'they', 'thou', 'thy', 'us', 'your']
 
 with open(F_IN, 'r', encoding='utf-8', newline='\n') as f_in:
     raw_text = f_in.read()

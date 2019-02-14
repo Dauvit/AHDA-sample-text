@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 URL = 'http://www.thomasmoore.ie/Prose/EdRev/TMHA_1.0_Prose_EdRev_1814_23.html'
 HTML_IN = 'sample_thomas_moore_download.html'
-TXT_OUT = 'sample_thomas_moore_download.txt'
+TXT_OUT = 'Moore.txt'
 
 # if working directly from the web
 # with urlopen(URL) as f_in:

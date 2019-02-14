@@ -1,7 +1,7 @@
 # A Quick Introduction to Python #
 
-Chase AHDA Python workshop
-FutureLearn Offices, Camden, UK
+Chase AHDA Python workshop  
+FutureLearn Offices, Camden, UK  
 Monday 14 February 2019
 
 
@@ -11,11 +11,20 @@ This workshop is not going to teach you how to be a Python programmer in one day
 However, *it will* introduce you to enough Python,
 and supply you with enough sample code,
 to let you make progress in using and writing scripts for your research.
-Further, it will introduce you to three useful resources
-that will let you work independently afterwards.
+Further, it will introduce you to the three useful resources
+from the introductory slides that will let you work independently afterwards.
 
+As a recap the resources are:
+
+- [W3C Python tutorial](https://www.w3schools.com/python/default.asp)
+- Python Manual - bundled with Python and in the `Doc` sub-folder of Python itself 
+- [nltk online book](http://www.nltk.org/book/)
 
 # Datatypes #
+
+There are many datatypes in Python.
+We will look at the three that are most useful in the digital humanities:
+string, lists and dict[ionarie]s.
 
 
 ## Strings ##
@@ -34,34 +43,35 @@ A list is marked by square brackets, and can contain any other datatype,
 even another list.
 
 - `part1_04.py` a simple list, and how computers count
+  <br>
+  <span style="background-color:azure;">
+  **OBOE** Off By One Error - computers count from zero, humans from one  
+  **Tuples** are similar to lists, but are *immutable*.  
+  You cannot change their contents.  
+  Marked by round brackets instead of square brackets.  
+  They have their place, but for our purposes we shall stick with lists.
+  </span>
+
 - `part1_05.py` shows some of the operations you can perform on a list
-    <span style="background-color:azure;">
-    Go to Python manual for page of list operations
-    </span>
+  <span style="background-color:azure;">
+  Go to Python manual for page of list operations
+  </span>
 - `part1_06.py` introducing if…else… in a literate form
 - `part1_07.py` some more style options, aimed at making scripts easier to read
 
 
-### IDLE bonus - autocomplete ###
+### Bonus - autocomplete ###
 
-Using Ctrl + space
+**IDLE** – use Ctrl + space
 
-```
->>> words = ['Mary', 'had', 'a', 'little']
->>> words
-['Mary', 'had', 'a', 'little']
->>> words.append('lamb')
->>> words
-['Mary', 'had', 'a', 'little', 'lamb']
->>>
-```
+**Spyder** – use tab
 
 
 ## Naming things - good practice ##
 
 With autocomplete there's no need to save typing:
 
-```
+```python
 w = ['Mary', 'had', 'a', 'little', 'lamb']
 ```
 
@@ -73,13 +83,13 @@ and **word** for the individual entry in the list.
 
 What does this Python function do?
 
-```
+```python
 ts('trump', 20, False, True)
 ```
 
 And this one?
 
-```
+```python
 twitter_search('trump', numtweets=20, retweets=False, unicode=True)
 ```
 
@@ -88,28 +98,6 @@ that's the joining together of words by an underscore.
 The other common way of doing this in computer languages is **CamelCase**,
 using capital letters to distinguish joined words.
 Pythonic code uses **snake_case**.
-
-
-### Tuples ###
-
-Are similar to lists, but are *immutable*.  
-You cannot change their contents.  
-Marked by round brackets instead of square brackets.  
-They have their place, but for our purposes we shall stick with lists.
-
-```
->>> words = ('Mary', 'had', 'a', 'little', 'lamb')
->>> words
-('Mary', 'had', 'a', 'little', 'lamb')
->>>words[2]
-a
->>> words[3] = 'big'
-Traceback (most recent call last):
-  File "<pyshell#2>", line 1, in <module>
-    words[3] = 'big'
-TypeError: 'tuple' object does not support item assignment
->>> 
-```
 
 
 ## Hands on ##
@@ -195,6 +183,16 @@ not humans.
 While you read and write to a plain text file,
 you load and dump to a json file.
 
+The data is built from the same datatypes of string, list and dict.
+Hence can reference 'title' as a key to retrieve its value.
+Similarly, with 'rioxx2_author' retrieves list of authors,
+so need to loop through.
+
+<p style="background-color:azure;">
+One author has an ORCID id listed.
+Do you have yours yet?
+</p>
+
 
 ### xml ###
 
@@ -202,9 +200,8 @@ you load and dump to a json file.
 
 <p style="background-color:azure;">
 Not terribly useful, just an Element.
-Show how to look this up in Python manual.
-
-Similarly Python re Match object.
+Show how to look this up in Python manual,
+and see useful methods, eg tag and text.
 </p>
 
 Python has several built-in XML parsers, of which `etree`
@@ -212,7 +209,6 @@ is the easiest to use.
 If you have particularly demanding XML to processing
 then use the external package `lxml`.
 This is bundled with the standard Anaconda distribution,
-
 
 - `part2_07.py` read an xml file more usefully
 
@@ -237,12 +233,22 @@ To catch you out from the pattern above,
 for zip files the magic line is not
 `import zip` but `import zipfile`.
 
-Unlikely to have so many zip files that you need a sscrfipt to unzip them all.
+Unlikely to have so many zip files that you need a script to unzip them all.
 More likely to be a better use of your time to manually unzip them.
 It's the trade off between the time taken to write a *reliable* script
 and just doing the task in hand.
 
 - `part2_08.py` bonus unzip **and** read an xml file
+
+<p style="background-color:azure;">
+Can talk through to explain,
+but for the students perhaps better that they know this is a
+working script that they can take away.
+
+Yes, there is an external package to do this too,
+probably more than one actually.
+But it is not bundled with Anaconda.
+</p>
 
 
 ### csv ###
@@ -251,6 +257,10 @@ Sample data taken from `BL_Labs_Broadcast_News_2010.csv`,
 supplied directly by Mahendra Mahey on one of this visits to the OU.
 
 - `part2_09.py` read a csv file
+  <span style="background-color:azure;">
+  Give example from National Idea project of processing a 7Gb csv file.
+  That's too big to load in Excel never mind do anything with.
+  </span>
 - `part2_10.py` read a csv file as a dictionary
 - `part2_11.py` read and write a csv file
 
@@ -288,10 +298,16 @@ then use the external package `requests`.
 This package is bundled with the standard Anaconda distribution,
 
 To process the html use the external package
-[BeautifulSoup documenation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+[BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 This package is also bundled with the standard Anaconda distribution,
 
-- `part3_01.py` download and save a local copy of an html web page
+- `part3_01.py` download and save a local copy of an html web page.
+  <span style="background-color:azure;">
+  Note invalid comment actually from part3_04.
+  This is a genuine mistake but not corrected
+  so as to raise awareness of the need to think about comments you read
+  in other people's code and not just accept them blindly.
+  </span>
 - `part3_02.py` extract text from html - what does the computer understand as text?
 - `part3_03.py` extract other data from html
 
@@ -304,8 +320,13 @@ the intervention of a developer to rewrite the code.
 - `part3_04.py` download and save a local copy of a static html web page
 - `part3_05.py` extract text from static html
 
-Hold on to the downloaded data because we're going to use it later
+Hold on to data extracted from the downloaded data
+because we're going to use it later
 in this session when we look at data cleaning.
+<span style="background-color:azure;">
+Though for for backup in case of internet access problems,
+the file `Moore.txt` is included in this data collection.
+</span>
 
 There are better methods of sharing data over the web than writing web pages.
 Typically, web sites will expose data directly
@@ -332,6 +353,23 @@ XML is handled in a similar fashion to json because both are text files.
 
 - `part3_07.py` download and save a local copy of an xml web resource
 
+<p style="background-color:azure;">
+json is taking over from xml for data sharing,
+especially over the web.
+In part, because any immediate processing is likely
+to be through JavaScript.
+But also because json files are smaller than their xml equivalent.
+This is a result of the differing data structure of the two formats.
+Typically a json data element just has the name and then the data;
+whereas an xml data element has an opening tag, the data **and then**
+a closing tag. Immediately more bytes are needed to encode the data
+in xml than in json.
+For example 46 citations take up 33Kb in Endnote/XML
+as against 27Kn in CSL/json.
+Yet the data are identical.
+The space saving arises solely from the structure of the data.
+</p>
+
 
 ### pdf ###
 
@@ -346,6 +384,10 @@ but sometimes it's all you'll get.
 # Processing files #
 
 - `part4_01.py` cut some sample data
+  <span style="background-color:azure;">
+  Either to remove header and footer information from a file,
+  or to cut a smaller sample for testing purposes.
+  </span>
 - `part4_02.py` remove leading spaces
 
 <p style="background-color:azure;">
@@ -402,6 +444,15 @@ by default punctuation remains but as separate tokens.
 
 - `part5_01.py` tokenize text
 
+<p style="background-color:azure;">
+Should fail with need to download punkt:<br>
+<code>Line 11: nltk.download('punkt')</code>
+
+Then will fail because word_tokenize not found,
+need to state it's in the nltk package:<br>
+<code>Line 16: tokens = nltk.word_tokenize(raw_text)</code>
+</p>
+
 
 ## Word counts ##
 
@@ -412,13 +463,16 @@ A simple, but useful statistic.
 As well as `nltk.FreqDist()` for the *frequency distribution*,
 there is `nltk.ConditionalFreqDist()`,
 which compares word frequency distributions across corpora.
-Very useful for stylistic analysis.
+Very useful as a way into understanding the content and sentiment of a text,
+and a necessary step in stylistic analysis.
 
 - `part5_03.py` conditional frequency words
 - `part5_03_with_function.py` conditional frequency words
 
 In effectively one line of Python,
 so much is calculated for you…
+…and from this can plot(), tabulate(), etc
+because these functions are built in.
 
 nltk has many corpora available.
 Run nltk.download() from a Python shell
@@ -437,22 +491,33 @@ And then we go down the rabbit hole of metrics.
 
 <p style="background-color:azure;">
 Missing stopwords?  
-Follow the instructions…
+Follow the instructions in the error message.
+Are incorporated as line 11 in sample.
 </p>
 
+Collocates is another useful route into understanding
+the content and sentiment of a text,
+with more numbers to substantiate any conclusions.
+
 Coming back to words…
+here is a more sophisticated way of finding keywords in texts.
+Especially useful to gain context.
+Can specify how much surrounding context to retrieve
 
 - `part5_06.py` concordance
 
+In this example, compare the negative words associated with 'monster'
+to the more positive words associated with 'creature'.
 
-## Understanding words##
+
+## Understanding words ##
 
 Some common NLP tasks
 
-- `part5_07.py` stem words
-- `part5_08.py` lemmatize words
-- `part5_09.py` POS (parts of speech) tagging
-- `part5_10.py` NER (named entity recognition)
+- `part5_07.py` stem words – *typographical root of a word*
+- `part5_08.py` lemmatize words – *semantic root of a word*
+- `part5_09.py` POS (parts of speech) tagging – *building block for other analysis*
+- `part5_10.py` NER (named entity recognition) – *depends on your identifier*
 
 
 # Conclusion #

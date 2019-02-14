@@ -15,5 +15,5 @@ with open(CSV_IN, 'r', encoding='utf-8', newline='\n') as f_csv:
     reader = csv.DictReader(f_csv)
     for row in reader:
         print(row['StartDate'])
-        if reader.line_num < 25:
+        if reader.line_num == 25:
             break

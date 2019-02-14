@@ -10,7 +10,7 @@ Part 5, Example 3.
 import nltk
 
 FILE_ONE = 'Frankenstein.txt'
-FILE_TWO = 'sample_thomas_moore_download.txt'
+FILE_TWO = 'Moore.txt'
 
 with open(FILE_ONE, 'r', encoding='utf-8',newline='\n') as f_in:
     raw_text = f_in.read()

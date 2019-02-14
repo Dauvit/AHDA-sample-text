@@ -13,4 +13,4 @@ with open(F_IN, 'r', encoding='utf-8', newline='\n') as f_in:
     lines = f_in.readlines()
     for line in lines:
         if line.startswith('ART'):
-            print(line.upper())
+            print(line.lower())

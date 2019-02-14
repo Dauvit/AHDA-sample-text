@@ -8,6 +8,9 @@ Part 1, Example 4.
 # Simple list
 
 words = ['Mary', 'had', 'a', 'little', 'lamb']
+
+# words = ('Mary', 'had', 'a', 'little', 'lamb')
+
 print(words) 
 
 print(words[1])

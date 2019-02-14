@@ -20,7 +20,7 @@ def get_tokens(file_name, condition):
 
 Frankenstein_tokens = get_tokens('Frankenstein.txt', 'Frankenstein')
 print(Frankenstein_tokens[:4])
-Moore_tokens = get_tokens('sample_thomas_moore_download.txt', 'Moore')
+Moore_tokens = get_tokens('Moore.txt', 'Moore')
 print(Moore_tokens[:4])
 Frankenstein_tokens += Moore_tokens
 cfd = nltk.ConditionalFreqDist(Frankenstein_tokens)

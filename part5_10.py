@@ -13,7 +13,7 @@ nltk.download('words')
 
 print()
 
-sentence = "Francesca is working at The Open University in Britain."
+sentence = "President Trump visited the United Nations headquarters in New York."
 tokens = nltk.word_tokenize(sentence)
 pos_tags = nltk.pos_tag(tokens)
 print(nltk.ne_chunk(pos_tags))

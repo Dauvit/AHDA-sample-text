@@ -18,5 +18,13 @@ mountains = {'Asia': 'Everest',
 for key in mountains.keys():
     print(key)
 
+print()
 for key, value in mountains.items():
-    print(value)
+    print(f'The highest mountain in {key} is {value}')
+
+print()
+for continent, mountain in mountains.items():
+    print(f'The highest mountain in {continent} is {mountain}')
+
+print()
+print(mountains['Australia'])

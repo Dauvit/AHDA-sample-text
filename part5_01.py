@@ -7,7 +7,7 @@ Part 5, Example 1.
 
 # Tokenize text
 
-from nltk import word_tokenize
+import nltk
 
 F_IN = 'Frankenstein.txt'
 
